@@ -8,8 +8,13 @@
    <children>
       <StackPane prefHeight="480.0" prefWidth="640.0">
          <children>
+            <!-- タイトル画面 -->
             <VBox fx:id="titlePane" prefHeight="200.0" prefWidth="100.0" />
+
+            <!-- ゲーム画面 -->
             <VBox fx:id="gamePane" prefHeight="200.0" prefWidth="100.0" />
+
+            <!-- リザルト画面 -->
             <VBox fx:id="resultPane" prefHeight="200.0" prefWidth="100.0" />
          </children></StackPane>
    </children>
