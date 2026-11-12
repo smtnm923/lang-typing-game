@@ -10,6 +10,7 @@
          <children>
             <VBox fx:id="titlePane" prefHeight="200.0" prefWidth="100.0" />
             <VBox fx:id="gamePane" prefHeight="200.0" prefWidth="100.0" />
+            <VBox fx:id="resultPane" prefHeight="200.0" prefWidth="100.0" />
          </children></StackPane>
    </children>
 </AnchorPane>
