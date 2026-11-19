@@ -2,9 +2,12 @@ package com.example;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 
 public class MainController {
+    @FXML 
+    private StackPane rootPane;
     @FXML 
     private VBox titlePane;
     @FXML 
