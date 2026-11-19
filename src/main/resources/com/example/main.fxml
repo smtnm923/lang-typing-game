@@ -12,7 +12,7 @@
    <children>
       <StackPane prefHeight="480.0" prefWidth="640.0">
          <children>
-            <VBox fx:id="titlePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <VBox fx:id="titlePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
                <children>
                   <Label text="言語学習タイピングゲーム">
                      <font>
@@ -28,26 +28,46 @@
                      </font>
                   </Button>
                </children></VBox>
-            <VBox fx:id="gamePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+            <VBox fx:id="gamePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" visible="false">
                <children>
                   <Label fx:id="wordLabel" text="한국">
                      <font>
                         <Font size="50.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="100.0" />
+                        <Insets />
                      </VBox.margin>
                   </Label>
-                  <Button fx:id="goResultButton" mnemonicParsing="false" text="リザルト画面へ（仮）" />
-               </children></VBox>
-            <VBox fx:id="resultPane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+                  <Label fx:id="strokeLabel" alignment="TOP_CENTER" prefHeight="36.0" prefWidth="286.0" text="ㅎㅏㄴㄱㅜㄱ" textAlignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="missLabel" alignment="TOP_CENTER" prefHeight="18.0" prefWidth="400.0" textFill="RED">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="goResultButton" mnemonicParsing="false" text="リザルト画面へ（仮）">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin></VBox>
+            <VBox fx:id="resultPane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" visible="false">
                <children>
                   <Label text="ゲームクリア！">
                      <font>
                         <Font size="28.0" />
                      </font>
                      <VBox.margin>
-                        <Insets bottom="150.0" />
+                        <Insets />
                      </VBox.margin>
                   </Label>
                   <Button fx:id="backToTitleButton" mnemonicParsing="false" text="タイトル画面へ戻る" />
