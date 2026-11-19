@@ -12,7 +12,7 @@
    <children>
       <StackPane prefHeight="480.0" prefWidth="640.0">
          <children>
-            <VBox fx:id="titlePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+            <VBox fx:id="titlePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
                   <Label text="言語学習タイピングゲーム">
                      <font>
@@ -28,7 +28,7 @@
                      </font>
                   </Button>
                </children></VBox>
-            <VBox fx:id="gamePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <VBox fx:id="gamePane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
                <children>
                   <Label fx:id="wordLabel" text="한국">
                      <font>
@@ -38,8 +38,20 @@
                         <Insets bottom="100.0" />
                      </VBox.margin>
                   </Label>
+                  <Button fx:id="goResultButton" mnemonicParsing="false" text="リザルト画面へ（仮）" />
                </children></VBox>
-            <VBox fx:id="resultPane" prefHeight="200.0" prefWidth="100.0" visible="false" />
+            <VBox fx:id="resultPane" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false">
+               <children>
+                  <Label text="ゲームクリア！">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="150.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="backToTitleButton" mnemonicParsing="false" text="タイトル画面へ戻る" />
+               </children></VBox>
          </children></StackPane>
    </children>
 </AnchorPane>
